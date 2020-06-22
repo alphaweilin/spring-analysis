@@ -34,12 +34,13 @@
 	</bean>
 
 	<!--aop config -->
-	<bean id="around" class="com.demo.analysis.aop.Around" />
+<!-- 	<bean id="around" class="com.demo.analysis.aop.Around" />
+	 <aop:config proxy-target-class="true"> 指定cglib生成proxy
 	<aop:config>
-		<!-- login方法，作为切入点，加入额外功能  -->
+		login方法，作为切入点，加入额外功能 
 		<aop:pointcut id="pc"
 			expression="execution(* login(..))" />
-		<!--组装：目的把切入点 与 额外功能进行 整合 -->
+		组装：目的把切入点 与 额外功能进行 整合
 		<aop:advisor advice-ref="around" pointcut-ref="pc" />
-	</aop:config>
+	</aop:config> -->
 </beans>
